@@ -46,6 +46,7 @@ export const jwtCheck = auth({
         next();
 
       }catch(error){
+        console.log(error);
         return res.sendStatus(401);
       }
   };
